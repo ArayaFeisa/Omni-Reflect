@@ -71,19 +71,19 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void Update() {
-        if (SceneManager.GetActiveScene().name.Equals("Selector"))
-        {
-            PlayerPrefs.SetInt("lvl1ShardCount", lvl1ShardCount);
-            PlayerPrefs.SetInt("lvl2ShardCount", lvl2ShardCount);
-            PlayerPrefs.SetInt("lvl3ShardCount", lvl3ShardCount);
-        }
-        if (SceneManager.GetActiveScene().name.Equals("Stage 1")) shardCounter.text = lvl1ShardCount + "/18";
-        if (SceneManager.GetActiveScene().name.Equals("Stage 2")) shardCounter.text = lvl2ShardCount + "/24";
-        if (SceneManager.GetActiveScene().name.Equals("Stage 3")) shardCounter.text = lvl3ShardCount + "/30";
-        if (isDashing)
-        {
-            return;
-        }
+        // if (SceneManager.GetActiveScene().name.Equals("Selector"))
+        // {
+        //     PlayerPrefs.SetInt("lvl1ShardCount", lvl1ShardCount);
+        //     PlayerPrefs.SetInt("lvl2ShardCount", lvl2ShardCount);
+        //     PlayerPrefs.SetInt("lvl3ShardCount", lvl3ShardCount);
+        // }
+        // if (SceneManager.GetActiveScene().name.Equals("Stage 1")) shardCounter.text = lvl1ShardCount + "/18";
+        // if (SceneManager.GetActiveScene().name.Equals("Stage 2")) shardCounter.text = lvl2ShardCount + "/24";
+        // if (SceneManager.GetActiveScene().name.Equals("Stage 3")) shardCounter.text = lvl3ShardCount + "/30";
+        // if (isDashing)
+        // {
+        //     return;
+        // }
         vel = body.velocity;
         horizontalInput = Input.GetAxis("Horizontal");
         horizontalMovement();

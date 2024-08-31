@@ -21,7 +21,7 @@ public class MenuTestScript : MonoBehaviour
     public void Play()
     {
         PlayerPrefs.DeleteAll();
-        SceneManager.LoadScene("Selector");
+        SceneManager.LoadScene("Stage 1");
     }
 
     public void Load()
