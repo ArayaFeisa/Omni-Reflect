@@ -8,6 +8,7 @@ public class ClickInPortal : MonoBehaviour
     public GameObject outPortal; 
     private bool isInPortalPlaced = false;
     private bool isOutPortalPlaced = false;
+    [SerializeField] private AudioClip soundPortal;
 
     private void Awake() {
         inPortal.SetActive(false);
@@ -33,6 +34,7 @@ public class ClickInPortal : MonoBehaviour
     }
 
     private void PlaceInPortal() {
+        SoundManager.instance.PlaySound(soundPortal);
         Vector3 mousePosition = Input.mousePosition;
         mousePosition.z = 0;
         Vector3 inPortalPos = Camera.main.ScreenToWorldPoint(mousePosition);
@@ -45,6 +47,7 @@ public class ClickInPortal : MonoBehaviour
     }
 
     private void PlaceOutPortal() {
+        SoundManager.instance.PlaySound(soundPortal);
         Vector3 mousePosition = Input.mousePosition;
         mousePosition.z = 0;
         Vector3 outPortalPos = Camera.main.ScreenToWorldPoint(mousePosition);
