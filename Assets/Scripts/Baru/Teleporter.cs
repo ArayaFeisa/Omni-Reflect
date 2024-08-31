@@ -6,8 +6,13 @@ public class Teleporter : MonoBehaviour
 {
     private HashSet<GameObject> portalObjects = new HashSet<GameObject>();
     [SerializeField] private Transform destination;
+    [SerializeField] private string playerTag = "Player";
     
     private void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.CompareTag(playerTag))
+        {
+            return;
+        }
         if (portalObjects.Contains(collision.gameObject)){
             return;
         }
