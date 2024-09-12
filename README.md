@@ -1,5 +1,5 @@
 # Omni-Reflect
- Kelompok 6 Divisi Game RAION Internship 2024        
+ Kelompok 2 Divisi Game RAION Hackjam 2024        
 Link Download: https://drive.google.com/file/d/1_j0Mz12x2iBFfDcDmQPY-eZGOpf_7vKP/view?usp=sharing
 
 Step 1: Click the link above, it will direct you to the zip file    
